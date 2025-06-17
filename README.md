@@ -77,19 +77,21 @@ class MahasiswaController extends Controller
 }
 public function destroy($npm)
 {
-    $response = Http::delete("http://localhost:8080/mahasiswa/{$npm}");
+    $response = Http::delete("http://localhost:8080/mahasiswa/delete/{$npm}");
 
     if ($response->successful()) {
         return redirect('/mahasiswa')->with('success', 'Data berhasil dihapus');
     } else {
-        return back()->with('error', 'Gagal hapus data');
+        return back()->with('error', 'Gagal hapus data: ' . $response->body());
     }
 }
+
+
 
 // Tampilkan form edit
 public function edit($npm)
 {
-    $response = Http::get("http://localhost:8080/mahasiswa/{$npm}");
+    $response = Http::get("http://localhost:8080/mahasiswa/update{$npm}");
     $data = $response->json();
 
     if ($response->successful()) {
@@ -242,10 +244,12 @@ public function update(Request $request, $npm)
                         <td>{{ $mhs['email'] }}</td>
                         <td>
                             <a href="/mahasiswa/edit/{{ $mhs['npm_mhs'] }}" class="btn btn-sm btn-warning">Edit</a>
-                        <form action="/mahasiswa/delete/{{ $mhs['npm_mhs'] }}" method="POST" style="display:inline;">
+                            <form action="/mahasiswa/delete/{{ $mhs['npm_mhs'] }}" method="POST" style="display:inline;">
     @csrf
+    @method('DELETE')
     <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Yakin mau hapus?')">Hapus</button>
 </form>
+
                         </td>
                     </tr>
                     @endforeach
@@ -335,7 +339,7 @@ Route::get('/', function(){
 });
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 Route::post('/mahasiswa/simpan', [MahasiswaController::class, 'store']);
-Route::post('/mahasiswa/delete/{npm}', [MahasiswaController::class, 'destroy']);
+Route::delete('/mahasiswa/delete/{npm}', [MahasiswaController::class, 'destroy']);
 Route::get('/mahasiswa/edit/{npm}', [MahasiswaController::class, 'edit']);
-Route::post('/mahasiswa/update/{npm}', [MahasiswaController::class, 'update']);
+Route::put('/mahasiswa/update/{npm}', [MahasiswaController::class, 'update']);
 ```
