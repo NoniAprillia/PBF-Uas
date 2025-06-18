@@ -343,3 +343,11 @@ Route::delete('/mahasiswa/delete/{npm}', [MahasiswaController::class, 'destroy']
 Route::get('/mahasiswa/edit/{npm}', [MahasiswaController::class, 'edit']);
 Route::put('/mahasiswa/update/{npm}', [MahasiswaController::class, 'update']);
 ```
+
+Membuat Repo Github
+git init
+git remote add origin https://github.com/NoniAprillia/(namarepo)
+git add .
+git commit -m "Initial commit - FE Sistem Manajemen Magang"
+git pull origin master
+git push origin master
