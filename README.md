@@ -351,3 +351,149 @@ Membuat Repo Github
 - git commit -m "Initial commit - FE Sistem Manajemen Magang"
 - git pull origin master
 - git push origin master
+
+```
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (main)
+$ git init
+Reinitialized existing Git repository in C:/laragon/www/belajarPBFuas230102040/.git/
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (main)
+$ git add .
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (main)
+$ git commit -m "first commit"
+On branch main
+nothing to commit, working tree clean
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (main)
+$ git log --oneline
+eaaf44a (HEAD -> main) first commit
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (main)
+$ rm -rf .git
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040
+$ del /s /q .git
+bash: del: command not found
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040
+$ git init
+Initialized empty Git repository in C:/laragon/www/belajarPBFuas230102040/.git/
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (master)
+$ git add .
+warning: in the working copy of 'resources/views/mahasiswa/edit.blade.php', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'resources/views/mahasiswa/index.blade.php', CRLF will be replaced by LF the next time Git touches it
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (master)
+$ git add .
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (master)
+$ git commit -m "first commit"
+[master (root-commit) d2f77ab] first commit
+ 82 files changed, 11444 insertions(+)
+ create mode 100644 .editorconfig
+ create mode 100644 .env.example
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 app/Console/Kernel.php
+ create mode 100644 app/Exceptions/Handler.php
+ create mode 100644 app/Http/Controllers/Controller.php
+ create mode 100644 app/Http/Controllers/MahasiswaController.php
+ create mode 100644 app/Http/Kernel.php
+ create mode 100644 app/Http/Middleware/Authenticate.php
+ create mode 100644 app/Http/Middleware/EncryptCookies.php
+ create mode 100644 app/Http/Middleware/PreventRequestsDuringMaintenance.php
+ create mode 100644 app/Http/Middleware/RedirectIfAuthenticated.php
+ create mode 100644 app/Http/Middleware/TrimStrings.php
+ create mode 100644 app/Http/Middleware/TrustHosts.php
+ create mode 100644 app/Http/Middleware/TrustProxies.php
+ create mode 100644 app/Http/Middleware/ValidateSignature.php
+ create mode 100644 app/Http/Middleware/VerifyCsrfToken.php
+ create mode 100644 app/Models/User.php
+ create mode 100644 app/Providers/AppServiceProvider.php
+ create mode 100644 app/Providers/AuthServiceProvider.php
+ create mode 100644 app/Providers/BroadcastServiceProvider.php
+ create mode 100644 app/Providers/EventServiceProvider.php
+ create mode 100644 app/Providers/RouteServiceProvider.php
+ create mode 100644 artisan
+ create mode 100644 bootstrap/app.php
+ create mode 100644 bootstrap/cache/.gitignore
+ create mode 100644 composer.json
+ create mode 100644 composer.lock
+ create mode 100644 config/app.php
+ create mode 100644 config/auth.php
+ create mode 100644 config/broadcasting.php
+ create mode 100644 config/cache.php
+ create mode 100644 config/cors.php
+ create mode 100644 config/database.php
+ create mode 100644 config/filesystems.php
+ create mode 100644 config/hashing.php
+ create mode 100644 config/logging.php
+ create mode 100644 config/mail.php
+ create mode 100644 config/queue.php
+ create mode 100644 config/sanctum.php
+ create mode 100644 config/services.php
+ create mode 100644 config/session.php
+ create mode 100644 config/view.php
+ create mode 100644 database/.gitignore
+ create mode 100644 database/factories/UserFactory.php
+ create mode 100644 database/migrations/2014_10_12_000000_create_users_table.php
+ create mode 100644 database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php
+ create mode 100644 database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+ create mode 100644 database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php
+ create mode 100644 database/seeders/DatabaseSeeder.php
+ create mode 100644 package.json
+ create mode 100644 phpunit.xml
+ create mode 100644 public/.htaccess
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/index.php
+ create mode 100644 public/robots.txt
+ create mode 100644 resources/css/app.css
+ create mode 100644 resources/js/app.js
+ create mode 100644 resources/js/bootstrap.js
+ create mode 100644 resources/views/mahasiswa/edit.blade.php
+ create mode 100644 resources/views/mahasiswa/index.blade.php
+ create mode 100644 resources/views/welcome.blade.php
+ create mode 100644 routes/api.php
+ create mode 100644 routes/channels.php
+ create mode 100644 routes/console.php
+ create mode 100644 routes/web.php
+ create mode 100644 storage/app/.gitignore
+ create mode 100644 storage/app/public/.gitignore
+ create mode 100644 storage/framework/.gitignore
+ create mode 100644 storage/framework/cache/.gitignore
+ create mode 100644 storage/framework/cache/data/.gitignore
+ create mode 100644 storage/framework/sessions/.gitignore
+ create mode 100644 storage/framework/testing/.gitignore
+ create mode 100644 storage/framework/views/.gitignore
+ create mode 100644 storage/logs/.gitignore
+ create mode 100644 tests/CreatesApplication.php
+ create mode 100644 tests/Feature/ExampleTest.php
+ create mode 100644 tests/TestCase.php
+ create mode 100644 tests/Unit/ExampleTest.php
+ create mode 100644 vite.config.js
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (master)
+$ git remote add origin https://github.com/NoniAprillia/LatihanKel1.git
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (master)
+$ git branch -M main
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (main)
+$ git push -u origin main
+Enumerating objects: 106, done.
+Counting objects: 100% (106/106), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (90/90), done.
+Writing objects: 100% (106/106), 75.76 KiB | 500.00 KiB/s, done.
+Total 106 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/NoniAprillia/LatihanKel1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+acerq@LAPTOP-ROE623UF MINGW64 /c/laragon/www/belajarPBFuas230102040 (main)
+$
+```
